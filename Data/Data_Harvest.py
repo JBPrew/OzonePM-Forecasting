@@ -6,7 +6,7 @@ from meteostat import Hourly
 import pandas as pd
 
 
-
+#collects weather info
 def data_collect(location, time, list, dataframe):
     data = Hourly(location, datetime.fromisoformat(str(time).split('+')[0]), datetime.fromisoformat(str(time).split('+')[0]))
     data = data.fetch()
