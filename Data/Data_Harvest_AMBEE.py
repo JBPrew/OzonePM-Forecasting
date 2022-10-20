@@ -59,5 +59,5 @@ def data_harvest(city, weatherstationlocal, filename):
 # data_harvest("Bangkok", weatherstationlocal="48455", filename="Bangkok2021WSTAT.csv")
 headers = {"Accept": "application/json", "x-api-key": "39ebd22988369a53e7a73ecab7d88e04bd1ec375642ab4cecd84e1b69ae6ace9"}
 
-response = requests.get(" https://api.ambeedata.com/history/by-lat-lng?lat={lat}&lng={lon}&from={start}&to={end}&key={API}".format(lat = "13.7563", lon = "100.5018", start = "2022-09-03 00:00:00", end = "2022-09-03 23:00:00", API = "39ebd22988369a53e7a73ecab7d88e04bd1ec375642ab4cecd84e1b69ae6ace9"), headers= headers).json()
+response = requests.get(" https://api.ambeedata.com/history/by-lat-lng?lat={lat}&lng={lon}&from={start}&to={end}.format(lat = "13.7563", lon = "100.5018", start = "2022-09-03 00:00:00", end = "2022-09-03 23:00:00", API = "39ebd22988369a53e7a73ecab7d88e04bd1ec375642ab4cecd84e1b69ae6ace9"), headers= headers).json()
 print(response)
